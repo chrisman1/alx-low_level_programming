@@ -2,16 +2,15 @@
 
 /**
  *
- *    *main - Entry point
+ *    * main - Entry point
  *
  *    *
- *      return: always o (Success)
+ *      * return: always o (Success)
  *
  *      */
 
 int main(void)
 {
-	return (o)
+	return (o);
 
 }
-
