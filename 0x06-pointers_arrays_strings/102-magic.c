@@ -1,27 +1,28 @@
 #include "main.h"
 /**
- * _strncpy - copy a string
- * @dest: input value
- * @src: input value
- * @n: input value
- *
- * Return: dest
+ * print_number - prints an integer.
+ * @n: input integer.
+ * Return: no return.
  */
-char *_strncpy(char *dest, char *src, int n)
+void print_number(int n)
 {
-	int j;
+	unsigned int m, d, count;
 
-	j = 0;
-	while (j < n && src[j] != '\0')
+	if (n < 0)
 	{
-		dest[j] = src[j];
-		j++;
+		_putchar(45);
+		m = n * -1;
 	}
-	while (j < n)
+	else
 	{
-		dest[j] = '\0';
-		j++;
+		m = n;
 	}
 
-	return (dest);
-}
+	d = m;
+	count = 1;
+
+	while (d > 9)
+	{
+		d /= 10;
+		count *= 10;
+	}
